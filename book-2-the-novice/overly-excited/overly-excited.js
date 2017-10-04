@@ -1,5 +1,5 @@
 // // Create an array that contains the words in the sentence
-// const sentence = ["hi", "i", "am", "jared", "and", "I", "like", "to", "code", "everyday", "all", "day", "err", "day"];
+// const sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
 
 // /*
 //     The addExcitement function should be an impure function, and accept 
@@ -21,7 +21,7 @@
 
 
 // Create an array that contains the words in the sentence
-// const sentence = ["hi", "i", "am", "jared", "and", "I", "like", "to", "code", "everyday", "all", "day", "err", "day"];
+// const sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
 // const exclamation = "!"
 
 // /*
@@ -48,7 +48,7 @@
 
 
 // // Create an array that contains the words in the sentence
-// const sentence = ["hi", "i", "am", "jared", "and", "I", "like", "to", "code", "everyday", "all", "day", "err", "day"];
+// const sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
 // let exclamation = "!"
 
 // /*
@@ -77,7 +77,7 @@
 
 
 // Create an array that contains the words in the sentence
-const sentence = ["hi", "i", "am", "jared", "and", "I", "like", "to", "code", "everyday", "all", "day", "err", "day"];
+const sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
 
 
 /*
