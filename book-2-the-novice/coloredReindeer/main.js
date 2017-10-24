@@ -2,6 +2,8 @@ let domReindeer = document.getElementById('reindeer')
 
 let reindeerArray = coloredReindeerBuilder()
 
+console.log(reindeerArray)
+
 for (let i = 0; i < reindeerArray.length; i++) {
   let element = reindeerArray[i];
   console.log(element)
