@@ -9,11 +9,6 @@ let piggyBank = {
   "nickels": 0,
   "pennies": 0
 }
-// piggyBank.quarters = 0
-// piggyBank.dimes = 0
-// piggyBank.nickels = 0
-// piggyBank.pennies = 0
-
 // Running total through coin counter
 
 while (dollarAmount != 0){
