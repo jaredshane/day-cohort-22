@@ -1,0 +1,15 @@
+{
+  "name": "department_store",
+  "version": "1.0.0",
+  "description": "Your job is to build a department store's web page that lists products, the name of the department each one is in, and the price.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
