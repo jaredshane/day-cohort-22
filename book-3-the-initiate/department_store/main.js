@@ -13,14 +13,12 @@ $(document).ready(() => {
 				cats = categories.categories
 				prods = products.products
 
-				let whatever = writeToDom(cats, prods)
-				outputEl.html(whatever)
+				outputEl.html(writeToDom(cats, prods))
 			})
 		})
 
 		$('select').change((e) => {
-			let whatever = writeToDom(cats, prods)
-			outputEl.html(whatever)
+			outputEl.html(writeToDom(cats, prods))
 			let seasonSelected = e.target.value
 			if (seasonSelected === "none") {
 				return
