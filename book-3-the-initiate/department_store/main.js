@@ -19,10 +19,27 @@ $(document).ready(() => {
 		})
 
 		$('select').change((e) => {
+			let whatever = writeToDom(cats, prods)
+			outputEl.html(whatever)
 			let seasonSelected = e.target.value
-			console.log(seasonSelected)
+			if (seasonSelected === "none") {
+				return
+			}
+			// console.log(seasonSelected)
 			console.log(cats)
 			console.log(prods)
+			let discountFound = cats.find((cat) => {
+				return cat.name === seasonSelected
+			})
+			console.log(discountFound)
+			let selectedCategory = Array.from($(`.${seasonSelected}`))
+			let priceEl = Array.from($(`.price__${discountFound.id}`))
+			priceEl.forEach(el => {
+					let currentPrice = el.innerHTML
+					currentPrice = currentPrice - (currentPrice * discountFound.discount)
+					el.innerHTML = currentPrice.toFixed(2)
+			})
+
 			
 		})
 
@@ -38,8 +55,8 @@ let writeToDom = (cats, prods) => {
 			if (cat.id == prod.category_id) {
 				htmlString += `
 				<section class='${cat.name}'>
-					<div> Name: ${prod.name} </div>
-					<div class="price__${prod.category_id}">Price: ${prod.price}</div>
+					<div>${prod.name} </div>
+					<div class="price__${prod.category_id}">${prod.price}</div>
 				</section>`
 			}
 		})
