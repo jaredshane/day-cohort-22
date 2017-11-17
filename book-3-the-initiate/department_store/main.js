@@ -25,19 +25,15 @@ $(document).ready(() => {
 			if (seasonSelected === "none") {
 				return
 			}
-			// console.log(seasonSelected)
-			console.log(cats)
-			console.log(prods)
 			let discountFound = cats.find((cat) => {
 				return cat.name === seasonSelected
 			})
-			console.log(discountFound)
 			let selectedCategory = Array.from($(`.${seasonSelected}`))
 			let priceEl = Array.from($(`.price__${discountFound.id}`))
 			priceEl.forEach(el => {
-					let currentPrice = el.innerHTML
-					currentPrice = currentPrice - (currentPrice * discountFound.discount)
-					el.innerHTML = currentPrice.toFixed(2)
+				let currentPrice = el.innerHTML
+				currentPrice = currentPrice - (currentPrice * discountFound.discount)
+				el.innerHTML = currentPrice.toFixed(2)
 			})
 
 			
