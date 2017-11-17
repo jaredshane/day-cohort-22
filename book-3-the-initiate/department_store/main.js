@@ -5,7 +5,7 @@ $(document).ready(() => {
 
 	$.ajax('products.json')
 		.then(products => {
-
+		
 			$.ajax('categories.json')
 
 			.then((categories) => {
@@ -23,6 +23,7 @@ $(document).ready(() => {
 			console.log(seasonSelected)
 			console.log(cats)
 			console.log(prods)
+			
 		})
 
 })
@@ -30,18 +31,16 @@ $(document).ready(() => {
 let writeToDom = (cats, prods) => {
 	let htmlString = ""
 	cats.forEach(cat => {
-		htmlString += `
-		<div>
-			<h1>${cat.name}</h1>
-		`
+		htmlString += 
+		`<div>
+			<h1>${cat.name}</h1>`
 		prods.forEach(prod => {
 			if (cat.id == prod.category_id) {
 				htmlString += `
-					<section class='${prod.category_id}'>
+				<section class='${cat.name}'>
 					<div> Name: ${prod.name} </div>
-					<div class="${prod.category_id}__price">Price: ${prod.price}</div>
-					<section>
-				`
+					<div class="price__${prod.category_id}">Price: ${prod.price}</div>
+				</section>`
 			}
 		})
 		htmlString += "</div>"
