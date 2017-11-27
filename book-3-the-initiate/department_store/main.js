@@ -1,9 +1,7 @@
 $(document).ready(() => {
 	let outputEl = $('#products')
 	let cats = []
-	let prods = []
-
-	
+	let prods = []	
 
 // 	$.ajax({
 //        url: 'https://new-cool-project-7d0fa.firebaseio.com/.json',
