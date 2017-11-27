@@ -1,0 +1,9 @@
+#product_1 section {
+	font-size: 0.75em;
+	line-height: 1em;
+}
+
+#product_1 > section {
+	font-size: 1.1em;
+	line-height: 2em;
+}

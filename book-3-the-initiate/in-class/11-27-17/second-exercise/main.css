@@ -1,0 +1,6 @@
+#leaderboard :nth-child(-n+3) {
+	background-color: gold;
+	color: red;
+	font-weight: 10;
+	border: 2px solid black;
+}
