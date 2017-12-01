@@ -28,10 +28,6 @@ $.ajax('https://new-cool-project-7d0fa.firebaseio.com/.json')
 				prods = products.products
 
 				outputEl.html(writeToDom(cats, prods))
-				return 10
-			})
-			.then((stuff) => {
-				console.log(stuff)
 			})
 		})
 

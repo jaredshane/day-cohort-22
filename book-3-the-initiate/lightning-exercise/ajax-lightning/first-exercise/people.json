@@ -1,0 +1,14 @@
+{
+	"students": [
+		{
+			"name": "Jared",
+			"age": 29,
+			"color": "blue"
+		},
+		{
+			"name": "Meg",
+			"age": 27,
+			"color": "goldenrod"
+		}
+	]
+}
