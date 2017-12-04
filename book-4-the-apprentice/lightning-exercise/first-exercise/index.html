@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body ng-app="People">
+	<div ng-controller="PeopleCtrl">
+		<input type="button" ng-click="doThisOnClick()" value="click this">
+		<section ng-repeat="student in students">
+			<div style="color: {{student.color}}">Name: {{student.name}}  Age: {{student.age}}</div>
+		</section>
+
+	</div>
+	
+	<script src="./lib/node_modules/angular/angular.min.js"></script>
+	<script src="./app/main.js"></script>
+</body>
+</html>
