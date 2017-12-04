@@ -7,7 +7,12 @@
 		},
 		{
 			"name": "Meg",
-			"age": 27,
+			"age": 29,
+			"color": "rebeccapurple"
+		},
+		{
+			"name": "Steve",
+			"age": 21,
 			"color": "goldenrod"
 		}
 	]

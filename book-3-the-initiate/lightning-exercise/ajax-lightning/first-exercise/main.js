@@ -9,7 +9,3 @@ $(document).ready( () => {
 		$("#people").html(htmlToBuild)
 	})
 })
-
-
-
-const firebase = require()
