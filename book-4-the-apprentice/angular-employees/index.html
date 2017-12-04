@@ -1,0 +1,24 @@
+<!DOCTYPE html>	
+<html>
+	<head>
+		<title>Document</title>
+	</head>
+	<body ng-app="EmployeeMgmt">
+		<div ng-controller="EmployeeCtrl">
+			<form ng-submit="addEmployee()">
+				<input type="text" value="First Name" ng-model="newEmployee.firstName">
+				<input type="text" value="Last Name" ng-model="newEmployee.lastName">
+				<button>Hire Employee</button>
+			</form>
+
+			<ul ng-repeat="(key, employee) in employees">
+				<li ng-if="employee.employmentEnd === 0">{{employee.firstName}} {{employee.lastName}}	 <button ng-click="fireEmployee(key, employee)">Fire Employee</button></li>
+			</ul>
+			
+		</div>
+
+		
+		<script src='lib/node_modules/angular/angular.min.js'></script>
+		<script src='app/EmployeeCtrl.js'></script>
+	</body>
+</html>
